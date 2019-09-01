@@ -9,7 +9,8 @@
   },
   "scripts": {
     "start": "node ./bin/server",
-    "dev": "nodemon ./bin/server"
+    "dev": "nodemon ./bin/server",
+    "configure": "./bin/config_db.sh"
   },
   "author": "",
   "license": "ISC",
