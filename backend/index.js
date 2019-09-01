@@ -1,7 +1,7 @@
 const Dragon = require('./dragon')
 
 const smoag = new Dragon({
-    nickname: 'Smoag' ,
+    nickname: 'Smog' ,
     birthdate: new Date()
 })
 
