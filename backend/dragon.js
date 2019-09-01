@@ -8,7 +8,7 @@ const DEFAULT_PROPERTIES = {
     get randomTraits(){
         const traits = []
 
-        TRAITS.forEach (TRAIT => {
+        TRAITS.forEach (TRAITS => {
             const traitType = TRAITS.type
             const traitValues = TRAITS.values
 
