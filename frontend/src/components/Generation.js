@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 
 class Generation extends Component{
+    state = { generation: { generationId: 999, expiration: '2020-05-01' }}
+
     render(){
-        const generation = {generationId: 999, expiration: '2020-05-01'}
+        const { generation } = this.state;
 
         return (
             <div>
