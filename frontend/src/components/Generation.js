@@ -9,7 +9,7 @@ class Generation extends Component{
 
 
     fetchGeneration = () => {
-        fetch('http://localhost:3000/generation')
+        fetch('http://localhost:5000/generation')
          .then(response => console.log('response', response))
     }
 

@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clean": "rmdir -rf dist .cache",
     "start": "parcel src/index.html",
     "dev": "npm run start"
   },

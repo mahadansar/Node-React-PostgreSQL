@@ -9,7 +9,7 @@ const engine = new GenerationEnginer()
 
 app.locals.engine = engine
 
-app.use(cors({ origin: 'http://locahost:1234' }))
+app.use(cors({ origin: 'http://localhost:1234' }))
 app.use('/dragon', dragonRouter)
 app.use('/generation', generationRouter)
 
