@@ -1,0 +1,22 @@
+{
+  "name": "Practice-Node--React-with-SQL",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nf start",
+    "backend": "nodemon backend/bin/server",
+    "frontend": "parcel frontend/src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahadansar/Practice-Node--React-with-SQL.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mahadansar/Practice-Node--React-with-SQL/issues"
+  },
+  "homepage": "https://github.com/mahadansar/Practice-Node--React-with-SQL#readme"
+}
