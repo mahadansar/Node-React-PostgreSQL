@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 
 const DEFAULT_GENERATION = { generationId: '', expiration: '' }
 
@@ -51,4 +52,12 @@ class Generation extends Component{
     }
 }
 
-export default Generation
+const mapStateToProps = state => {
+    const generation = state.generation
+
+    return { generation }
+}
+
+const componentConnector = connect(mapStateToProps)
+
+export default componentConnector(Generation)
