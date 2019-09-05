@@ -2,10 +2,13 @@ import React from 'react';
 import {render} from 'react-dom';
 import Generation from './components/Generation'
 import Dragon from './components/Dragon'
+import Header from './components/Header'
+
+import './index.css'
 
 render(
     <div>
-        <h2>Test</h2>
+        <Header />
         <Generation />
         <Dragon />
     </div>,
