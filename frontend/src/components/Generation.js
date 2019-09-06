@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { fetchGeneration } from '../actions/generation'
 import fetchStates from '../reducers/fetchStates'
 
-const MINIMUM_DELAY = 3000
+const MINIMUM_DELAY = 15000
 
 class Generation extends Component{
     timer = null
