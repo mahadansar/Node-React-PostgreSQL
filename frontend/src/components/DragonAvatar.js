@@ -29,9 +29,9 @@ class DragonAvatar extends Component{
 
         return (
             <div className='dragon-avatar-image-wrapper'>
-                <div className='dragon-avatar-image-background' style={ backgroundColor, sizing }></div>
-                <img src={pattern} style={sizing} className='dragon-avatar-image-pattern' />
-                <img src={build} style={sizing} className='dragon-avatar-image' />
+                <div style={{ backgroundColor, ...sizing }} className='dragon-avatar-image-background'></div>
+                <img src={pattern} style= {{ ...sizing }} className='dragon-avatar-image-pattern' />
+                <img src={build} style={{ ...sizing }} className='dragon-avatar-image' />
             </div>
         )
     }
