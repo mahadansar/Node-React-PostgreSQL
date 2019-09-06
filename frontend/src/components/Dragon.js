@@ -7,8 +7,8 @@ import { fetchDragon } from '../actions/dragon'
 class Dragon extends Component{
     render() {
         return (
-        <div>
-            <Button onClick={this.props.fetchDragon}>New Dragon</Button>
+        <div className="text-color">
+            <Button className="text-color" onClick={this.props.fetchDragon}>New Dragon</Button>
             <DragonAvatar dragon = {this.props.dragon} />
         </div>
         )

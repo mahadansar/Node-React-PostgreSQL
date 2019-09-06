@@ -27,3 +27,7 @@ body {
 .dragon-avatar-image{
     z-index: 0;
 }
+
+.text-color{
+    color: #d5bdda;
+}

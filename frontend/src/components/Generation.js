@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { fetchGeneration } from '../actions/generation'
 import fetchStates from '../reducers/fetchStates'
 
-const MINIMUM_DELAY = 15000
+const MINIMUM_DELAY = 30000
 
 class Generation extends Component{
     timer = null
@@ -35,7 +35,7 @@ class Generation extends Component{
         }
 
         return (
-            <div>
+            <div className="text-color">
                 <h3>Generation {generation.generationId}. Expires on:</h3>
                 <h4>{new Date(generation.expiration).toString()}</h4>
             </div>
