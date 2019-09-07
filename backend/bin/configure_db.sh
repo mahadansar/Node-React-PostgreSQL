@@ -8,7 +8,7 @@ DROP DATABASE dragonstackdb;
 CREATE DATABASE dragonstackdb;
 
 
-CREATE TABLE account(id SERIAL PRIMARY KEY, "usernameHash" CHARACTER(64), "passwordHash" CHARACTER(64));
+CREATE TABLE account(id SERIAL PRIMARY KEY, "usernameHash" CHARACTER(64), "passwordHash" CHARACTER(64), "sessionId" CHARACTER(36) );
 
 CREATE TABLE generation ( id SERIAL PRIMARY KEY, expiration TIMESTAMP NOT NULL );
 
