@@ -1,33 +1,34 @@
-const express = require('express')
-const cors = require('cors')
-const bodyParser = require('body-parser')
-const cookieParser = require('cookie-parser')
-const GenerationEnginer = require('./generation/engine')
-const dragonRouter = require('./api/dragon')
-const generationRouter = require('./api/generation')
-const accountRouter = require('./api/account')
+const express = require("express");
+const cors = require("cors");
+const bodyParser = require("body-parser");
+const cookieParser = require("cookie-parser");
+const GenerationEnginer = require("./generation/engine");
+const dragonRouter = require("./api/dragon");
+const generationRouter = require("./api/generation");
+const accountRouter = require("./api/account");
 
-const app = express()
-const engine = new GenerationEnginer()
+const app = express();
+const engine = new GenerationEnginer();
 
-app.locals.engine = engine
+app.locals.engine = engine;
 
-app.use(cors({ origin: 'http://localhost:1234' }))
-app.use(bodyParser.json())
-app.use(cookieParser())
+app.use(cors({ origin: "http://localhost:1234" }));
+app.use(bodyParser.json());
+app.use(cookieParser());
 
-app.use('/account', accountRouter)
-app.use('/dragon', dragonRouter)
-app.use('/generation', generationRouter)
+app.use("/account", accountRouter);
+app.use("/dragon", dragonRouter);
+app.use("/generation", generationRouter);
 
-app.use((err, req, res , next) => {
-    const statusCode = err.statusCode || 500
+app.use((err, req, res, next) => {
+  const statusCode = err.statusCode || 500;
 
-    res.status(statusCode).json({
-        type: 'error', message: err.message
-    })
-})
+  res.status(statusCode).json({
+    type: "error",
+    message: err.message,
+  });
+});
 
-engine.start()
+engine.start();
 
-module.exports = app    
+module.exports = app;
