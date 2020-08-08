@@ -1,6 +1,7 @@
-const { Pool } = require('pg')
-const databaseConfiguration = require('./secrets/databaseConfiguration')
+const { Pool } = require("pg");
 
-const pool = new Pool(databaseConfiguration)
+const PGURI = `postgres://${process.env.USER}:${process.env.PASSWORD}@${process.env.HOST}:${process.env.PORT}/${process.env.DATABASE}`;
 
-module.exports = pool
+const pool = new Pool({ connectionString: PGURI });
+
+module.exports = pool;
